@@ -1,16 +1,16 @@
 ---
 version: 7.1.1
-slug: mosquitto
-name: Mosquitto broker
-description: An Open Source MQTT broker
-url: https://github.com/home-assistant/addons/tree/master/mosquitto
+slug: anonymosquitto
+name: Anonymous Mosquitto broker
+description: An Open Source MQTT broker with configurable anonymous access
+url: https://github.com/olutra/ha-custom-apps/tree/master/anonymosquitto
 arch:
   - aarch64
   - amd64
 auth_api: true
 discovery:
   - mqtt
-image: homeassistant/{arch}-addon-mosquitto
+image: homeassistant/{arch}-addon-anonymosquitto
 map:
   - ssl
   - share
