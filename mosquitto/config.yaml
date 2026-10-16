@@ -34,6 +34,7 @@ schema:
     - username: str
       password: password
       password_pre_hashed: "bool?"
+  allow_anonymous: bool?
   log_dest:
     - list(none|stdout|stderr|topic)?
   log_type:

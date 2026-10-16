@@ -27,6 +27,11 @@ persistence_location /data/
 # is busy and cannot read messages fast enough
 max_queued_messages 8192
 
+# Anonymous authentication
+{{ if .allow_anonymous }}
+allow_anonymous true
+{{ end }}
+
 # Authentication plugin
 auth_plugin /usr/share/mosquitto/go-auth.so
 # Restore pre-7.0 behaviour: allow '/' in client ids and usernames.
