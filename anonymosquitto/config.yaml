@@ -10,7 +10,6 @@ arch:
 auth_api: true
 discovery:
   - mqtt
-image: homeassistant/{arch}-addon-anonymosquitto
 map:
   - ssl
   - share
