@@ -92,7 +92,7 @@ bashio::var.json \
   keyfile "${keyfile}" \
   log_dest "^${log_dest}" \
   log_type "^${log_type}" \
-  allow_anonymous "^$(bashio::config 'anonymous')" \
+  allow_anonymous "^$(bashio::config 'allow_anonymous')" \
   require_certificate "^$(bashio::config 'require_certificate')" \
   ssl "^${ssl}" \
   debug "^$(bashio::config 'debug')" \
