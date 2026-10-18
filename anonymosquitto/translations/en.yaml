@@ -8,6 +8,9 @@ configuration:
       without any configuration. You can also specify
       `password_pre_hashed: true` to utilize a pre-hashed password from the
       output of the `pw` command (which is present inside the container).
+  allow_anonymous:
+      name: Allow Anonymous Connections
+      description: Allow MQTT clients to connect without credentials.
   log_dest:
     name: Log Destinations
     description: >-
