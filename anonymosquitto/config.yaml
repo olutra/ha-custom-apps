@@ -1,5 +1,5 @@
 ---
-version: 7.1.1-custom.1
+version: 7.1.1-custom.2
 slug: anonymosquitto
 name: Anonymous Mosquitto broker
 description: An Open Source MQTT broker with configurable anonymous access
@@ -15,6 +15,7 @@ map:
   - share
 options:
   logins: []
+  allow_anonymous: false
   log_dest: []
   log_type: []
   require_certificate: false
@@ -33,7 +34,7 @@ schema:
     - username: str
       password: password
       password_pre_hashed: "bool?"
-  allow_anonymous: bool?
+  allow_anonymous: bool
   log_dest:
     - list(none|stdout|stderr|topic)?
   log_type:

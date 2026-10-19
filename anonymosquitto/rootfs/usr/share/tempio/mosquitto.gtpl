@@ -30,6 +30,8 @@ max_queued_messages 8192
 # Anonymous authentication
 {{ if .allow_anonymous }}
 allow_anonymous true
+{{ else }}
+allow_anonymous false
 {{ end }}
 
 # Authentication plugin
