@@ -1,5 +1,5 @@
 ---
-version: 7.1.1-custom.2
+version: 7.1.1-custom.3
 slug: anonymosquitto
 name: Anonymous Mosquitto broker
 description: An Open Source MQTT broker with configurable anonymous access
